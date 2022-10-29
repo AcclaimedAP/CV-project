@@ -1,6 +1,6 @@
 /*Variables*/
-$div-color: rgba(255, 255, 255, 0.507);
-$div-shadow: 0px 5px 6px rgba(0, 0, 0, 0.26);
+$div-color: rgba(100, 100, 100, 0.507);
+$div-shadow: 0px 5px 6px rgba(0, 0, 0, 0.363);
 $bd-filter: saturate(180%) blur(10px);
 $rounded-borders: 30px;
 
@@ -8,6 +8,7 @@ $rounded-borders: 30px;
 body{
     background-color: rgb(68, 118, 255);
     font-family: 'Roboto', sans-serif;
+    color: rgb(200 , 200, 200);
 }
 .flex-container{
     display: flex;
@@ -183,7 +184,7 @@ path {
     transform-origin: 50% 0%;
   }
   .background--custom {
-    background-color: #FFFFFF;
+    background-color: #141414;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -193,25 +194,25 @@ path {
   }
   @keyframes path0 {
     0% {
-      transform: rotate(60deg);
-    }
-    100% {
-      transform: rotate(-60deg);
-    }
-  }
-  @keyframes path1 {
-    0% {
       transform: rotate(-30deg);
     }
     100% {
       transform: rotate(30deg);
     }
   }
-  @keyframes path2 {
+  @keyframes path1 {
     0% {
-      transform: rotate(40deg);
+      transform: rotate(20deg);
     }
     100% {
-      transform: rotate(-40deg);
+      transform: rotate(-20deg);
+    }
+  }
+  @keyframes path2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
     }
   }
