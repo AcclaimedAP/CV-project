@@ -174,15 +174,27 @@ h3{
     text-align: center;
     .bottom-title{
         margin: 0;
+        margin-bottom: 5px;
         grid-row: 1;
         grid-column: 3;
-
-
     }
     .contact-link {
         margin-bottom: 20px;
         grid-row: 2;
-        
+        font-size: 20px;
+        :link{
+            text-decoration: none;
+            color: rgb(185, 227, 255);
+        }
+        :visited{
+            color: rgb(152, 194, 194);
+        }
+        :hover{
+            color: rgb(196, 238, 238);
+        }
+        :active{
+            color: rgb(132, 158, 158);
+        }
     }
 }
 
