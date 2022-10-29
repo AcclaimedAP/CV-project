@@ -1,5 +1,12 @@
+/*Variables*/
+$div-color: rgba(255, 255, 255, 0.507);
+$div-shadow: 0px 5px 6px rgba(0, 0, 0, 0.26);
+$bd-filter: saturate(180%) blur(10px);
+$rounded-borders: 30px;
+
+
 body{
-    background-color: aqua;
+    background-color: rgb(68, 118, 255);
 }
 .flex-container{
     display: flex;
@@ -13,10 +20,14 @@ body{
 ########################################################################################
 */
 .top-content{
-    height: 100px;
+    height: 60px;
     min-width: 100%;
-    background-color: bisque;
+    background-color: $div-color;
     flex: 2 0 auto;
+    text-align: center;
+    line-height: 100%;
+    backdrop-filter: $bd-filter;
+    box-shadow: $div-shadow;
 }
 
 
@@ -28,12 +39,15 @@ body{
 ########################################################################################
 */
 .left-content{
-    background-color: blue;
+    background-color: $div-color;
     flex: 1 0 auto;
     text-align: center;
-    min-width: 275px;
-    max-width: 275px;
-
+    min-width: 265px;
+    max-width: 265px;
+    border-radius: $rounded-borders;
+    margin: 10px;
+    backdrop-filter: $bd-filter;
+    box-shadow: $div-shadow;
     h5{
         margin: 0;
     }
@@ -44,9 +58,54 @@ body{
         display: block;
         margin-bottom: 8px;
         margin-top: 3px;
+        border-style:none;
+        --background: #dadada;
+        --optimum: rgb(0, 162, 255);
+        --sub-optimum: rgb(46, 95, 201);
+        --sub-sub-optimum: rgb(54, 70, 138);
+        /* https://stackoverflow.com/questions/8094835/how-to-style-html5-meter-tag */
+          /* The gray background in Firefox */
+        background: var(--background);
+        
+    }
+    /* The gray background in Chrome, etc. */
+    meter::-webkit-meter-bar {
+        background: var(--background);
+    }
+  
+    /* The green (optimum) bar in Firefox */
+    meter:-moz-meter-optimum::-moz-meter-bar {
+        background: var(--optimum);
+    }
+  
+    /* The green (optimum) bar in Chrome etc. */
+    meter::-webkit-meter-optimum-value {
+        background: var(--optimum);
+    }
+  
+    /* The yellow (sub-optimum) bar in Firefox */
+    meter:-moz-meter-sub-optimum::-moz-meter-bar {
+        background: var(--sub-optimum);
+    }
+  
+    /* The yellow (sub-optimum) bar in Chrome etc. */
+    meter::-webkit-meter-suboptimum-value {
+        background: var(--sub-optimum);
+    }
+  
+    /* The red (even less good) bar in Firefox */
+    meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+        background: var(--sub-sub-optimum);
+    }
+  
+    /* The red (even less good) bar in Chrome etc. */
+    meter::-webkit-meter-even-less-good-value {
+        background: var(--sub-sub-optimum);
     }
     img{
         box-shadow: 0px 6px 5px black;
+        display: block;
+        margin: 30px auto;
     }
 }
 /*
@@ -60,8 +119,56 @@ body{
 .right-content{
     flex: 8 0 auto;
     min-width: 800px;
-    max-width: calc(100% - 275px);
-    background-color: crimson;
-
-
+    max-width: calc(100% - 385px);
+    background-color: $div-color;
+    padding: 40px;
+    border-radius: $rounded-borders;
+    margin: 10px;
+    backdrop-filter: $bd-filter;
+    box-shadow: $div-shadow;
 }
+h3{
+    font-size: 1.5vh;
+}
+h2+h3{
+    font-size: 2vh;
+}
+
+
+/* background https://pocoloco.io/ */
+path {
+    transform-origin: 50% 0%;
+  }
+  .background--custom {
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  @keyframes path0 {
+    0% {
+      transform: rotate(60deg);
+    }
+    100% {
+      transform: rotate(-60deg);
+    }
+  }
+  @keyframes path1 {
+    0% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(30deg);
+    }
+  }
+  @keyframes path2 {
+    0% {
+      transform: rotate(40deg);
+    }
+    100% {
+      transform: rotate(-40deg);
+    }
+  }
