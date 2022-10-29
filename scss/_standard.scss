@@ -165,13 +165,24 @@ h3{
     flex: 1 0 auto;
     min-width: calc(100% - 100px);
     background-color: $div-color;
-    padding: 40px;
+    padding: 10px 40px;
     border-radius: $rounded-borders;
     margin: 10px;
     backdrop-filter: $bd-filter;
     box-shadow: $div-shadow;
-    h2{
+    display: grid;
+    text-align: center;
+    .bottom-title{
         margin: 0;
+        grid-row: 1;
+        grid-column: 3;
+
+
+    }
+    .contact-link {
+        margin-bottom: 20px;
+        grid-row: 2;
+        
     }
 }
 
