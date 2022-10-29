@@ -28,6 +28,9 @@ body{
     line-height: 100%;
     backdrop-filter: $bd-filter;
     box-shadow: $div-shadow;
+    position: sticky;
+    top: 0px;
+    z-index: 40;
 }
 
 
@@ -119,20 +122,56 @@ body{
 .right-content{
     flex: 8 0 auto;
     min-width: 800px;
-    max-width: calc(100% - 385px);
+    max-width: calc(100% - 305px);
+    background-color: $div-color;
+    padding: 0px;
+    border-radius: $rounded-borders;
+    margin: 10px;
+    backdrop-filter: $bd-filter;
+    box-shadow: $div-shadow;
+
+
+}
+h3{
+    font-size: 1.5vh;
+    margin: 20px 30px;
+}
+.sub-title{
+    font-size: 2vh;
+    margin: 20px 50px;
+}
+.sticky-background{
+
+    display: block;
+    text-align: center;
+    position: static;
+    top: 60px;
+
+}
+
+/*
+########################################################################################
+######################################                ##################################
+###################################### BOTTOM CONTENT ##################################
+######################################                ##################################
+########################################################################################
+*/
+.bottom-content{
+    flex: 1 0 auto;
+    min-width: calc(100% - 100px);
     background-color: $div-color;
     padding: 40px;
     border-radius: $rounded-borders;
     margin: 10px;
     backdrop-filter: $bd-filter;
     box-shadow: $div-shadow;
+    h2{
+        margin: 0;
+    }
 }
-h3{
-    font-size: 1.5vh;
-}
-h2+h3{
-    font-size: 2vh;
-}
+
+
+
 
 
 /* background https://pocoloco.io/ */
