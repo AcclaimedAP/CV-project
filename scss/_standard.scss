@@ -7,6 +7,7 @@ $rounded-borders: 30px;
 
 body{
     background-color: rgb(68, 118, 255);
+    font-family: 'Roboto', sans-serif;
 }
 .flex-container{
     display: flex;
@@ -133,22 +134,24 @@ body{
 
 
 }
+section > span{
+    text-align: center;
+}
+h2{
+    margin: 40px 0 0 0;
+    font-size: 24px;
+}
 h3{
-    font-size: 1.5vh;
-    margin: 20px 30px;
+    font-size: 14px;
+    margin: 10px 30px;
+    font-weight: 400;
 }
 .sub-title{
-    font-size: 2vh;
-    margin: 20px 50px;
+    font-size: 16px;
+    margin: 0 50px;
+    font-weight: 600;
 }
-.sticky-background{
 
-    display: block;
-    text-align: center;
-    position: static;
-    top: 60px;
-
-}
 
 /*
 ########################################################################################
