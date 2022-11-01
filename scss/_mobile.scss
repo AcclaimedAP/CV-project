@@ -5,7 +5,9 @@
     #menu-toggle{
         visibility: visible;
     }
-
+    html{
+        scroll-behavior: smooth;
+    }
 
     .left-content{
         max-width: 100%;
