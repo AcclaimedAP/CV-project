@@ -135,7 +135,7 @@ body{
 section > span{
     text-align: center;
     display: block;
-    background-color: $div-color;
+    background-color: rgba(255, 255, 255, 0.822);
     box-shadow: $div-shadow;
     margin: 20px 20px;
 }
@@ -186,16 +186,16 @@ h3{
         font-size: 20px;
         :link{
             text-decoration: none;
-            color: rgb(185, 227, 255);
+            color: rgb(32, 185, 255);
         }
         :visited{
-            color: rgb(152, 194, 194);
+            color: rgb(40, 207, 207);
         }
         :hover{
-            color: rgb(196, 238, 238);
+            color: rgb(19, 223, 223);
         }
         :active{
-            color: rgb(132, 158, 158);
+            color: rgb(0, 168, 168);
         }
     }
 }
