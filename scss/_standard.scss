@@ -132,11 +132,13 @@ body{
     margin: 10px;
     backdrop-filter: $bd-filter;
     box-shadow: $div-shadow;
-
-
-}
 section > span{
     text-align: center;
+    display: block;
+    background-color: $div-color;
+    box-shadow: $div-shadow;
+    margin: 20px 20px;
+}
 }
 h2{
     margin: 40px 0 0 0;

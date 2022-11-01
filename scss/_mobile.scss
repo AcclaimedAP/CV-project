@@ -6,6 +6,12 @@
     .right-content{
         min-width: calc(100% - 20px);
         max-width: calc(100% - 20px);
+        section{
+            span{
+                position: sticky;
+                top: 60px;
+            }
+        }
     }
 
 
