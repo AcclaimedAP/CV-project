@@ -337,3 +337,30 @@ path {
       transform: rotate(-40deg);
     }
   }
+
+  @media (prefers-reduced-motion){
+    @keyframes path0 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes path1 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes path2 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+  }
