@@ -245,7 +245,7 @@ body{
         padding-bottom: 105px;
 
     }
-section > span{
+    section > h2 > span{
     text-align: center;
     display: block;
     background-color: rgba(255, 255, 255, 0.822);
@@ -287,7 +287,8 @@ h3{
     box-shadow: $div-shadow;
     display: grid;
     text-align: center;
-    .bottom-title{
+    
+    #contact {
         margin: 0;
         margin-bottom: 5px;
         grid-row: 1;
