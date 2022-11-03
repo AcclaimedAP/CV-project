@@ -10,3 +10,13 @@ hreflink.forEach(menulink => {
 
     });
 });
+
+//Changes menu icon if menu is open
+const menuicon = document.querySelectorAll('.material-symbols-outlined');
+myfield.addEventListener('click', function handleClick(event) {
+    if (myfield.checked == 1){
+        menuicon[0].innerHTML = "close";
+    } else {
+        menuicon[0].innerHTML = "menu";
+    }
+});
